@@ -1,0 +1,13 @@
+Clear
+
+New Circuit.vsource_70fc3a22-ca16-41d8-b5dc-af0c65e75193 Bus1=70fc3a22-ca16-41d8-b5dc-af0c65e75193.3.2.1 BasekV=12.4704 pu=1.0 Angle=0.0 Phases=3 Z1=[0.001, 0.001] Z0=[0.001, 0.001]
+redirect LineCodes.dss
+redirect Transformers.dss
+redirect Lines.dss
+redirect Loads.dss
+New EnergyMeter.SourceMeter element=Line.2f631f31-8b8f-4f55-88da-449d60a188b4
+New EnergyMeter.SourceMeter2 element=Line.855a5338-8ade-4018-8764-2a8dc1ca14a9
+Set Voltagebases=[0.47998591979348726, 12.4704, 0.20784]
+calcv
+Solve
+redirect BusCoords.dss
